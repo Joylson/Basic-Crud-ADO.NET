@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace DAL
+namespace BLL
 {
-    interface IUsuarioDAL<entity> where entity: class
+    interface IUsuarioBLL<entity> where entity: class
     {
         IEnumerable<entity> GetAll();
         entity Get(int id);

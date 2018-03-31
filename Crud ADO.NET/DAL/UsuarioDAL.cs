@@ -1,11 +1,6 @@
 ﻿using DAL.Factory;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
-using System.Data.SqlClient;
 using DTO;
 
 namespace DAL
@@ -86,6 +81,7 @@ namespace DAL
         {
             _Conn.OpenConnection();
             _Conn.InsertCommand($"UPADATE Usuario SET Nome = '{entity.Nome}', Senha = '{entity.Senha}', Email = '{entity.Email}' WHERE Id = {entity.Id};", CommandType.Text);
+            _Conn.CloseConnection();
         }
     }
 }
