@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Crud_ADO.NET
 {
-    class Program
+    class Teste
     {
         static void Main(string[] args)
         {
